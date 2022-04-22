@@ -5,6 +5,8 @@ ink-decal
 
 ink-decal is a library for projecting Splatoon-like ink using Unity's Decal function.
 
+<img width="512" alt="image" src="https://user-images.githubusercontent.com/43707/164626855-69f32ff9-95c1-4371-8884-865e148c6558.png">
+
 ### What is Decal?
 [Decal Renderer Feature | Universal RP | 12.0.0](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.0/manual/renderer-feature-decal.html)
 
