@@ -1,36 +1,16 @@
-name: Create UPM branches and run NPM publish
-
+name: UPM on npsjs.com
 on:
-  push:
-    tags:
-      - *
-
+  release:
+    types: [created]
 jobs:
-  update:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Get tag name
-        id: tag
-        run: echo ::set-output name=name::${GITHUB_REF#refs/tags/}
-
-      - name: Create UPM Branch
-        uses: hecomi/create-upm-branch-action@main
-        with:
-          git-tag: ${{ steps.tag.outputs.name }}
-          pkg-root-dir-path: Packages/tokyo.tichise.ink-decal
-          samples-dir: Examples
-
-      - name: Setup node
-        uses: actions/setup-node@v2
-        with:
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: NPM publish
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        registry-url: 'https://registry.npmjs.org'
+    - run: npm publish
+      working-directory: Packages/tokyo.tichise.ink-decal
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
