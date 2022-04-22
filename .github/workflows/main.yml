@@ -3,7 +3,7 @@ name: Create UPM branches and run NPM publish
 on:
   push:
     tags:
-      - v*
+      - *
 
 jobs:
   update:
