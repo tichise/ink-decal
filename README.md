@@ -1,6 +1,6 @@
 [![Create UPM branches and run NPM publish](https://github.com/tichise/ink-decal/actions/workflows/main.yml/badge.svg)](https://github.com/tichise/ink-decal/actions/workflows/main.yml)
 
-ink-decal
+Ink Decal Library for Unity
 ---
 
 ink-decal is a library for projecting Splatoon-like ink using Unity's Decal function.
