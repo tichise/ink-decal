@@ -22,8 +22,7 @@ jobs:
         uses: hecomi/create-upm-branch-action@main
         with:
           git-tag: ${{ steps.tag.outputs.name }}
-          pkg-root-dir-path: Assets/ambient-unity-lib
-          samples-dir: Examples
+          pkg-root-dir-path: Package/tokyo.tichise.ink-decal/
 
       - name: Setup node
         uses: actions/setup-node@v2
