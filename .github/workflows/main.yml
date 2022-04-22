@@ -16,7 +16,7 @@ jobs:
 
       - name: Get tag name
         id: tag
-        run: echo ::set-output name=name::${GITHUB_REF#refs/tags/v}
+        run: echo ::set-output name=name::${GITHUB_REF#refs/tags/}
 
       - name: Create UPM Branch
         uses: hecomi/create-upm-branch-action@main
