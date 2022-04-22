@@ -1,0 +1,20 @@
+{
+  "name": "tokyo.tichise.ink-decal",
+  "displayName": "Ink Decal Library for Unity",
+  "description": "Ink Decal is a library for projecting Splatoon-like ink using Unity's Decal function.",
+  "author": {
+    "name": "tichise",
+    "url": "https://github.com/tichise"
+  },
+  "version": "1.0.0",
+  "unity": "2022.2",
+  "license": "MIT License",
+  "keywords": [
+    "unity",
+    "decal",
+    "ink",
+    "urp",
+    "splatoon"
+  ],
+  "dependencies": {}
+}
