@@ -14,6 +14,10 @@ With the Decal Renderer Feature, Unity can project specific Materials (decals) o
 
 ### Install
 
+#### How to use decals
+To use decals in URP, first add a decal from the Add Renderer Feature button under Universal Renderer Data.
+
+#### manifest.json
 Add the following to `manifest.json` in UnityProject.
 
 
