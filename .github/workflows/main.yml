@@ -1,8 +1,8 @@
 name: UPM on npsjs.com
 on:
   push:
-    branches:    
-      - 'main'
+    tags:
+      - v*
 jobs:
   publish:
     runs-on: ubuntu-latest
