@@ -33,7 +33,7 @@ Add the following to `manifest.json` in UnityProject.
     }
   ],
   "dependencies": {
-    "tokyo.tichise.ink-decal": "1.0.3",
+    "tokyo.tichise.ink-decal": "1.0.2",
   }
 }
 
